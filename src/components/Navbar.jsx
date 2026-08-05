@@ -16,8 +16,8 @@ function Navbar() {
       <div className="nav-links hidden md:flex gap-8">
         <a className="font-semibold hover:text-sky-500 transition" onClick={()=>navigate("/")}>Home</a>
         <a className="font-semibold hover:text-sky-500 transition" href="#categories">Categories</a>
+        <a className="font-semibold hover:text-sky-500 transition" onClick={()=>navigate("/bookmarks")} href="#bookmarks">Bookmarks</a>
         <a className="font-semibold hover:text-sky-500 transition" onClick={()=>navigate("/about")} href="#about">About</a>
-        <a className="font-semibold hover:text-sky-500 transition" href="#contact">Contact</a>
       </div>
 
       <button className="font-semibold bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg cursor-pointer transition">
