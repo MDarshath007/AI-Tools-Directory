@@ -26,41 +26,35 @@ function Bookmarks() {
 
           <div className="flex flex-wrap gap-6">
             {bookMarks.map((tool) => (
-              <div
-                className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 ease-in-out cursor-pointer"
-              >
-                <div
-                  className="flex items-center gap-4"
-                  onClick={() => navigate(`/tools/${tool.slug}`)}
-                >
-                  <img
-                    src={tool.image}
-                    className="w-12 h-12 rounded-md object-cover"
-                  />
+              <div className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 ease-in-out cursor-pointer">
+                <div className="flex items-center justify-between">
                   <div>
-                    <h2 className="font-semibold text-lg">{tool.name}</h2>
-                    <div className="flex items-center gap-3 text-sm text-gray-500">
-                      <span>{tool.category}</span>
-                      <span>•</span>
-                      <span className="font-medium text-sky-600">
-                        {tool.pricing}
-                      </span>
+                    <div
+                      className="flex items-center gap-4"
+                      onClick={() => navigate(`/tools/${tool.slug}`)}
+                    >
+                      <img
+                        src={tool.image}
+                        className="w-12 h-12 rounded-md object-cover"
+                      />
+                      <div>
+                        <h2 className="font-semibold text-lg">{tool.name}</h2>
+                        <div className="flex items-center gap-3 text-sm text-gray-500">
+                          <span>{tool.category}</span>
+                          <span>•</span>
+                          <span className="font-medium text-sky-600">
+                            {tool.pricing}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <hr className="border-gray-100 my-1" />
-
-                <div className="des flex items-center justify-between">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {tool.description}
-                  </p>
                   <button
-                    className="text-white rounded-lg bg-red-600 
-              px-4 py-2 hover:bg-red-700 transition"
+                    className="text-white rounded-lg bg-red-600              
+                    px-4 py-2 hover:bg-red-700 transition"
                     onClick={() => handleDelete(tool.id)}
                   >
-                    Delete
+                    <i class="fa-regular fa-trash-can"></i>
                   </button>
                 </div>
               </div>

@@ -1,3 +1,5 @@
+import Search from "./Search";
+
 function Herosection() {
   return (
     <section className="w-full bg-black text-white py-12 px-6 md:px-12">
@@ -17,16 +19,7 @@ function Herosection() {
           </p>
 
           {/* Search Bar */}
-          <div className="search-bar flex items-center pt-2 max-w-lg">
-            <input 
-              type="text" 
-              className="placeholder-gray-500 rounded-l-xl bg-white text-black p-4 w-4/5 focus:outline-none" 
-              placeholder="Search AI tools..."
-            />
-            <button className="bg-sky-500 text-white w-1/5 p-4 rounded-r-xl font-medium hover:bg-sky-600 transition cursor-pointer">
-              Search
-            </button>
-          </div>
+          <Search/>
         </div>
 
         {/* Right Hero Image */}

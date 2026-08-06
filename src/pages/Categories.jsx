@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar";
 import tools from "../data/tools";
+import { useNavigate } from "react-router-dom";
 
 function Categories() {
+  const navigate = useNavigate();
   // 1. Icon mapping per category
   const categoryIconMap = {
     "All Tools": "fa-solid fa-boxes-stacked",
@@ -101,6 +103,7 @@ function Categories() {
             {categoriesList.map((category, index) => (
               <div
                 key={index}
+                onClick={()=>navigate(`/tools?categor${encodeURIComponent(category.name)}`)}
                 className="border border-gray-200 bg-white rounded-xl p-6 shadow-sm 
                            hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 
                            transition-all duration-300 ease-in-out cursor-pointer 
