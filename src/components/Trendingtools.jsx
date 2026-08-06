@@ -15,11 +15,7 @@ function Trendingtools() {
             <div
               onClick={() => navigate(`/tools/${tool.slug}`)}
               key={tool.id || tool.name}
-              className="card cursor-pointer 
-              border border-gray-200 bg-white 
-              rounded-lg flex flex-col justify-between 
-              gap-3 shadow-sm hover:shadow-md transition 
-              p-5 w-full sm:w-[calc(50%-12px)] 
+              className="border border-gray-200 bg-white rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 ease-in-out cursor-pointersm:w-[calc(50%-12px)] 
               lg:w-[calc(33.33%-16px)]"
             >
               <div className="flex items-center gap-4">

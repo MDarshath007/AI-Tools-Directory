@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Tooldetails from "./pages/Tooldetails.jsx";
 import Bookmarks from "./pages/Bookmarks.jsx";
+import Categories from "./pages/Categories.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/about" element={<About />}/>
       <Route path="/tools/:slug" element={<Tooldetails />}/>
       <Route path="/bookmarks" element={<Bookmarks />}/>
+      <Route path="/categories" element={<Categories />}/>
     </Routes>
     </>
   )

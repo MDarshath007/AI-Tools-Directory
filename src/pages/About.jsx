@@ -6,8 +6,8 @@ function About() {
     <>
       <Navbar/>
       <div className="max-w-7xl mt-10 mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-semibold mb-5 text-center">About AI Tools Directory</h1>
-        <p className="text-center">Our mission is to help people discover the best AI tools that can improve productivity, creativity and efficiency.</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-5 text-center">About AI Tools Directory</h1>
+        <p className="text-center text-gray-500">Our mission is to help people discover the best AI tools that can improve productivity, creativity and efficiency.</p>
         <div className="flex justify-between items-center my-10 flex-col md:flex-row p-4 sm:p-0">
             <img className="w-130" src="/src/assets/about-robot.png" alt="" />
             <div className="flex flex-col gap-4">

@@ -27,11 +27,7 @@ function Bookmarks() {
           <div className="flex flex-wrap gap-6">
             {bookMarks.map((tool) => (
               <div
-                className="card cursor-pointer 
-              border border-gray-200 bg-white 
-              rounded-lg flex flex-col justify-between 
-              gap-3 shadow-sm hover:shadow-md transition 
-              p-5 w-full"
+                className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 ease-in-out cursor-pointer"
               >
                 <div
                   className="flex items-center gap-4"
