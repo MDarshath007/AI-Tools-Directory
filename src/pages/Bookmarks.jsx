@@ -20,18 +20,19 @@ function Bookmarks() {
   return (
     <>
       <Navbar />
-      <section className="w-full h-screen py-12 px-6 md:px-12 bg-gray-50 text-gray-900">
+      <section className="w-full h-screen py-12 px-6 md:px-12 bg-gray-50 text-gray-900 ">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Bookmarks</h1>
+          <h1 className="text-4xl font-bold mb-6 text-gray-900">Bookmarks</h1>
 
           <div className="flex flex-wrap gap-6">
             {bookMarks.map((tool) => (
-              <div className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 ease-in-out cursor-pointer">
-                <div className="flex items-center justify-between">
+              <div className="border cursor-pointer border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm">
+                <div 
+                onClick={() => navigate(`/tools/${tool.slug}`)}
+                className="flex items-center justify-between">
                   <div>
                     <div
-                      className="flex items-center gap-4"
-                      onClick={() => navigate(`/tools/${tool.slug}`)}
+                      className="flex items-center gap-4"      
                     >
                       <img
                         src={tool.image}
@@ -50,7 +51,7 @@ function Bookmarks() {
                     </div>
                   </div>
                   <button
-                    className="text-white rounded-lg bg-red-600              
+                    className="text-white cursor-pointer rounded-lg bg-red-600              
                     px-4 py-2 hover:bg-red-700 transition"
                     onClick={() => handleDelete(tool.id)}
                   >

@@ -35,7 +35,7 @@ function Tooldetails() {
     <>
       <Navbar />
       <main className="w-full min-h-screen bg-gray-50 text-gray-900 py-8 px-4 sm:px-6 lg:px-12">
-        <div className="max-w-5xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-100">
+        <div className="max-w-5xl mx-auto bg-white  text-gray-900 p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-100">
           
           {/* Main Hero Header */}
           <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6 lg:gap-8">

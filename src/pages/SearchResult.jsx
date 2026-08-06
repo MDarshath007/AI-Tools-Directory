@@ -29,10 +29,12 @@ function SearchResult() {
         <Search />
         <div className="max-w-7xl mx-auto flex flex-wrap gap-3 mt-6">
           {filteredTools.map((tool) => (
-            <div className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 cursor-pointer">
+            <div 
+            onClick={(()=>navigate(`/tools/${tool.slug}`))}
+            className="border border-gray-200 bg-white w-full rounded-xl p-6 shadow-sm hover:scale-[1.02] hover:shadow-xl hover:border-sky-500 transition-all duration-300 cursor-pointer">
               <div
                 className="flex items-center gap-4"
-                onClick={(()=>navigate(`/tools/${tool.slug}`))}
+                
               >
                 <img
                   src={tool.image}

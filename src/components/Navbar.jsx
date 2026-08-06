@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import robotIcon from "/src/assets/robot-tab-icon.png";
-
+import DarkModeToggle from "./darkThemeButton";
 
 function Navbar() {
 
@@ -20,9 +20,7 @@ function Navbar() {
         <a className="font-semibold hover:text-sky-500 transition" onClick={()=>navigate("/about")} href="#about">About</a>
       </div>
 
-      <button className="font-semibold bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg cursor-pointer transition">
-        Theme
-      </button>
+      <DarkModeToggle/> 
     </nav>
   );
 }
