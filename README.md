@@ -36,19 +36,11 @@ src/
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/ai-tools-directory.git
+git clone https://github.com/MDarshath007/AI-Tools-Directory.git
 cd ai-tools-directory
 npm install
 npm run dev
 ```
-
-## 🔮 Future Improvements
-
-* User authentication
-* Reviews and ratings
-* Advanced filtering
-* Backend & database integration
-* Add more AI tools
 
 ## 👨‍💻 Author
 
