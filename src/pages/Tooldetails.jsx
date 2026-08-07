@@ -38,7 +38,7 @@ function Tooldetails() {
     <>
       <Navbar />
       <main className="w-full min-h-screen bg-gray-50 text-gray-900 py-8 px-4 sm:px-6 lg:px-12 dark:bg-gray-900 transition-colors duration-200">
-        <div className="max-w-5xl mx-auto bg-white  text-gray-900 p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-100 dark:bg-gray-800 transition-colors duration-200">
+        <div className="max-w-5xl mx-auto bg-white  text-gray-900 p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 dark:bg-gray-800 transition-colors duration-200">
           <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6 lg:gap-8  transition-colors duration-200">
             <img
               className="w-24 h-24 md:w-32 md:h-32 rounded-xl border border-gray-200 object-contain p-2 bg-white flex-shrink-0 shadow-sm"
@@ -92,7 +92,7 @@ function Tooldetails() {
             </div>
           </div>
 
-          <hr className="my-8 border-gray-100" />
+          <hr className="my-8 border-gray-200 dark:border-gray-700" />
 
           <div className="mt-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 dark:text-white">
