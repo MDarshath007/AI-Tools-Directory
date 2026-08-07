@@ -23,7 +23,7 @@ function Search() {
 
       <button
         onClick={handleSearch}
-        className="bg-sky-500 text-white w-1/5 p-4 rounded-r-xl shadow-sm border border-sky-500 font-medium hover:bg-sky-600 transition cursor-pointer"
+        className="bg-sky-500 text-white px-4 py-4 rounded-r-xl shadow-sm border border-sky-500 font-medium hover:bg-sky-600 transition cursor-pointer"
       >
         Search
       </button>

@@ -1,32 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function DarkModeToggle() {
-  const [theme, setTheme] = useState('light');
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
+  // Ensures component is mounted on the client to avoid hydration mismatch
   useEffect(() => {
-    const stored = localStorage.getItem('theme');
-    const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = stored || (prefersDark ? 'dark' : 'light');
-    setTheme(initial);
-    if (initial === 'dark') document.documentElement.classList.add('dark');
-    else document.documentElement.classList.remove('dark');
+    setMounted(true);
   }, []);
 
-  const toggle = () => {
-    const next = theme === 'dark' ? 'light' : 'dark';
-    setTheme(next);
-    localStorage.setItem('theme', next);
-    if (next === 'dark') document.documentElement.classList.add('dark');
-    else document.documentElement.classList.remove('dark');
-  };
+  if (!mounted) return null;
 
   return (
     <button
-      onClick={toggle}
-      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
-      aria-label="Toggle dark mode"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="p-2 rounded-lg bg-gray-800 duration-200 transition-colors"
     >
-      {theme === 'dark' ? '☀️' : '🌙'}
+      {theme === "dark" ? (
+        <i className="fa-regular fa-sun w-7 text-sky-500"></i>
+      ) : (
+        <i className="fa-regular fa-moon w-7 text-sky-500"></i>
+      )}
     </button>
   );
 }
