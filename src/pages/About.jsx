@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import robotImage from "/src/assets/about-robot.png"
 
 function About() {
   return (
@@ -19,7 +20,7 @@ function About() {
             improve productivity, creativity and efficiency.
           </p>
           <div className="flex justify-between items-center my-10 flex-col md:flex-row p-4 sm:p-0">
-            <img className="w-130" src="/src/assets/about-robot.png" alt="" />
+            <img className="w-130" src={robotImage} alt="" />
             <div className="flex flex-col gap-4">
               <div
                 className="flex items-center border gap-5

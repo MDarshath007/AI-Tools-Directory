@@ -1,4 +1,5 @@
 import Search from "./Search";
+import robotImage from "/src/assets/hero-page-robot.png"
 
 function Herosection() {
   return (
@@ -22,7 +23,7 @@ function Herosection() {
         <div className="hero-design flex-1 flex justify-center">
           <img
             className="w-full max-w-md object-contain"
-            src="/src/assets/hero-page-robot.png"
+            src={robotImage}
             alt="AI Robot Hero"
           />
         </div>
