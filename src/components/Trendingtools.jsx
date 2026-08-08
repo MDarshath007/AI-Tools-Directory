@@ -27,7 +27,7 @@ function Trendingtools() {
               dark:hover:shadow-sky-900
               dark:bg-gray-800 dark:border-gray-700 
               dark:hover:border-sky-400 
-              sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)]"
+              md:w-3/10 w-full"
             >
               <div className="flex items-center gap-4">
                 <img
